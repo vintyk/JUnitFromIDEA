@@ -19,6 +19,7 @@ public class CalculatorImplTest {
         calculator = new CalculatorImpl();
         double result = calculator.calculate("0");
         assertEquals(0, result, 1e-9);
+        System.out.println("------");
     }
 
     @Test
