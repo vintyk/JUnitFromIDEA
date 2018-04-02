@@ -21,7 +21,7 @@ public class PeopleTest {
     @Test
     public void exeptionIsTrue() {
         List peopleList = new ArrayList();
-        peopleList.add(new People("Vinty", 39));
+        peopleList.add(new People(1, "Vinty"));
         Assertions.assertThat(peopleList).isNotEmpty();
     }
 
@@ -42,8 +42,8 @@ public class PeopleTest {
     @Test
     public void mapCopy(){
         Map<String, People> map = new HashMap<>();
-        map.put("a", new People("Nikolya", 39));
-        map.put("b", new People("Serge", 38));
+        map.put("a", new People(39, "Nikolya"));
+        map.put("b", new People(38, "Serge"));
 
         Map<String, People> copiedMap = new HashMap<>(map);
 
@@ -56,7 +56,7 @@ public class PeopleTest {
                 .isNotSameAs(map);
 
         People people = new People();
-        people.setAge(41);
+        people.setId(41);
         people.setName("Dima");
         map.put("d", people);
         Assertions.assertThat(map).containsKey("d");
