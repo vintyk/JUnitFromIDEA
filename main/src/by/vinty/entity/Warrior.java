@@ -3,11 +3,9 @@ package by.vinty.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 public class Warrior extends Hero {
     private int health;
@@ -17,5 +15,15 @@ public class Warrior extends Hero {
         super(name, num);
         this.health = health;
         this.force = force;
+    }
+
+    @Override
+    public String toString() {
+        return "Warrior{" +
+                "health=" + health +
+                ", force=" + force +
+                ", name='" + name + '\'' +
+                ", num=" + num +
+                '}';
     }
 }
