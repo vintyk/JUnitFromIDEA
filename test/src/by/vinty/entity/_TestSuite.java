@@ -10,7 +10,7 @@ import org.junit.runners.Suite;
         , CalculatorImplTest.class
         , PeopleTest.class
         , WarriorTest.class
-        , StringTest.class
+        , StringTest2.class
         ,PeopleDaoIT.class
 })
 public class _TestSuite {
