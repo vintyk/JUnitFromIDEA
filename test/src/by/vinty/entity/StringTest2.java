@@ -35,6 +35,7 @@ public class StringTest2 {
     public void testSubstr(){
         str1="llo";
         Assert.assertEquals(str1, str2.substring(2));
+        Assert.assertEquals(str1, str2.substring(1));
     }
 
     @After

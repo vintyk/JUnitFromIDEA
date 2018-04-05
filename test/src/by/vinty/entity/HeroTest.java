@@ -30,6 +30,7 @@ public class HeroTest {
         int c = hero.sum(a,b);
         assertThat(c).isNotZero();
         assertThat(c).isEqualTo(expRezult);
+
     }
 
 }
