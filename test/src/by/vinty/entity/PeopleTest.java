@@ -30,6 +30,7 @@ public class PeopleTest {
         Map<String, People> map = new HashMap<>();
         Assertions.assertThat(map).isEmpty();
         Assertions.assertThat(map).hasSize(0);
+        Assertions.assertThat(map).hasSize(20);
         Assertions.assertThat(map).doesNotContainKey("x");
         assertThat(map.entrySet().iterator().hasNext()).isFalse();
         // или
