@@ -61,8 +61,7 @@ public class PeopleTest {
         map.put("d", people);
         Assertions.assertThat(map).containsKey("d");
         Assertions.assertThat(map).contains(entry("d", people));
-        Assertions.assertThat(map).containsKey("Виталик");
-        Assertions.assertThat(map).containsKey("Виталик");
+
 
         Assertions.assertThat(copiedMap)
                 .hasSize(2)
