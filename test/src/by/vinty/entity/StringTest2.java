@@ -14,7 +14,7 @@ public class StringTest2 {
     private String str2 = "";
 
     @Before
-    public void createElements(){
+    public void createElements() {
         List<String> listStr = new ArrayList<String>();
         listStr.add("Hello");
         listStr.add("Vinty");
@@ -32,13 +32,14 @@ public class StringTest2 {
     }
 
     @Test
-    public void testSubstr(){
-        str1="llo";
+    public void testSubstr() {
+        str1 = "llo";
         Assert.assertEquals(str1, str2.substring(2));
+        Assert.assertEquals(str1, str2.substring(1));
     }
 
     @After
-    public void clear(){
+    public void clear() {
         str1 = "";
         str2 = "";
     }
