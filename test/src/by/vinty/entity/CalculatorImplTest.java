@@ -27,6 +27,7 @@ public class CalculatorImplTest {
         calculator = new CalculatorImpl();
         double result = calculator.calculate("-3e3");
         assertEquals(-3000, result, 1e-9);
+        assertEquals(1,2);
     }
 
 
